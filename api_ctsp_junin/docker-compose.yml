@@ -17,9 +17,9 @@ services:
     # Configuración de redes
     networks:
       - rubert
-    # Mapeo de puertos: Mapea el puerto 6507 del host al puerto 80 del contenedor
+    # Mapeo de puertos: Mapea el puerto 8000 del host al puerto 8000 del contenedor
     ports:
-      - 8000:80
+      - 8000:8000
 
 # Definición de redes
 networks:

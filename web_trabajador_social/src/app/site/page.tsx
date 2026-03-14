@@ -203,7 +203,7 @@ function SitePage() {
                     width={400}
                     height={400}
                     className={`w-full h-full object-cover transition-transform duration-300 ${loadedGallery[index] ? 'group-hover:scale-105 opacity-100' : 'opacity-0'}`}
-                    onLoadingComplete={() => setLoadedGallery(prev => ({ ...prev, [index]: true }))}
+                    onLoad={() => setLoadedGallery(prev => ({ ...prev, [index]: true }))}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 ${loadedGallery[index] ? 'opacity-0 group-hover:opacity-100' : 'opacity-0'}`}>
                     <div className="absolute bottom-4 left-4 text-white">

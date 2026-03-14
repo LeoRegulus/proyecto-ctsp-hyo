@@ -14,7 +14,7 @@ services:
     # Conexión a la red llamada 'rubert'
     networks:
       - rubert
-    # Mapeo de puertos: Mapea el puerto 6000 del host al puerto 3000 del contenedor
+    # Mapeo de puertos: Mapea el puerto 3000 del host al puerto 3000 del contenedor
     ports:
       - 3000:3000
     # Nombre del contenedor

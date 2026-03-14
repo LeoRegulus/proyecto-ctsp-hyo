@@ -1,5 +1,5 @@
 # 1 - Etapa de construcción
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
 
 # Crear directorio para la aplicación
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # 2 - Etapa de producción
-FROM node:18-alpine AS runner
+FROM node:20-alpine AS runner
 
 # Crear directorio para la aplicación
 WORKDIR /app
